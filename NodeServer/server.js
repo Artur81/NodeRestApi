@@ -1,16 +1,17 @@
+require('custom-env').env()
+
 const express = require('express'),
     app = express(),
     bodyParser = require('body-parser');
 port = process.env.PORT || 3000;
 
-
 const mysql = require('mysql');
 // connection configurations
 const mc = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'mydb'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
 // connect to database
