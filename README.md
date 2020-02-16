@@ -47,5 +47,6 @@ INSERT INTO `tasks` (`id`, `task`, `status`, `created_at`) VALUES
 1. composer install
 2. ewentualne zmiany w .env
 3. php artisan serve
+4. http://localhost:8000/
 
 Pliki .env wrzuciłem do repo świadomie i celowo aby ułatwić odpalenie. W normalnej aplikacji bym tego nie zrobił.
